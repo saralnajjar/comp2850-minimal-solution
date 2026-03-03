@@ -7,6 +7,9 @@
   
   {# Pico CSS for baseline accessible styles (WCAG 2.2 AA compliant) #}
   <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2/css/pico.min.css">
+
+  {# linking the custom.css file #}
+  <link rel="stylesheet" href="/static/css/custom.css">
   
   {# HTMX for progressive enhancement #}
   <script src="https://unpkg.com/htmx.org@1.9.12"></script>

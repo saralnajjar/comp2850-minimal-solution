@@ -1,7 +1,7 @@
 # COMP2850 Task Manager
 
 Clean working implementation of COMP2850 task management application.
-
+###### For the WCAG accessibility audit and pilot study findings, see [ACCESSIBILITY_AUDIT.md](ACCESSIBILITY_AUDIT.md).
 ## Quick Start
 
 ```bash
@@ -38,3 +38,4 @@ Focus on evaluation planning, pilot testing, and analysis.
 ## Stopping the Server
 
 Press `Ctrl+C` in the terminal running the application.
+

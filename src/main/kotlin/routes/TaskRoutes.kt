@@ -291,8 +291,19 @@ private fun messageStatusFragment(
 ): String {
     val role = if (isError) "alert" else "status"
     val ariaLive = if (isError) """ aria-live="assertive"""" else """ aria-live="polite""""
-    val cssClass = if (isError) """ class="error"""" else ""
-    return """<div id="status" hx-swap-oob="true" role="$role"$ariaLive$cssClass>$message</div>"""
+
+    val backColour = if (isError) "#FFCCCB" else "#90EE90"
+    val textColour = if (isError) "#8B0000" else "#006400"
+    val cssClass = """ 
+        background-color: $backColour;
+        border: 3px solid $backColour;
+        color: $textColour;
+        padding: 15px;
+        font-size: 17px;
+        margin: 10px 0;
+        font-weight: bold;     
+    """.trimIndent().replace("\n", "")
+    return """<div id="status" hx-swap-oob="true" role="$role"$ariaLive style="$cssClass">$message</div>"""
 }
 
 /**
