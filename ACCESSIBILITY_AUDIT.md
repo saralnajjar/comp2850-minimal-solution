@@ -8,7 +8,7 @@ This case study covers the full audit lifecycle: study design, real participant 
 
 ## Overview
 
-| | |
+| | Description |
 |---|---|
 | **Application** | Task Manager web app (Kotlin + Ktor + HTMX) |
 | **Evaluation standard** | WCAG 2.1 (Levels A and AA) |
